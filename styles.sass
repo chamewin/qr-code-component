@@ -1,0 +1,65 @@
+//Importing font from Google Fonts API
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap')
+
+//Font Family
+$font-stack: 'Outfit', sans-serif
+
+// Width Variables
+$mobile-width: 375px
+$desktop-width: 1440px
+
+// Color Variables
+$white: hsl(0, 0%, 100%)
+$light-gray: hsl(212, 45%, 89%)
+$grayish-blue: hsl(220, 15%, 55%)
+$dark-blue: hsl(218, 44%, 22%)
+
+// Global styling for all selectors
+*
+    margin: 0
+    padding: 0
+
+// Styling for body selector 
+body
+    font-family: $font-stack
+    background-color: $light-gray
+    min-height: 100vh
+    display: flex
+    align-items: center
+    
+//Styling for paragraph selector
+p
+    font-size: 15px
+
+// Attribution class styling 
+.attribution
+    font-size: 12px
+    margin: 1rem auto
+    text-align: center
+
+// Container class styling 
+.container
+    max-width: 360px
+    margin: 0 auto
+
+// Card class styling 
+.card
+    background-color: $white
+    padding: 1rem
+    border-radius: 1rem
+    text-align: center
+
+    // Image within card styling 
+    img 
+        width: 100%
+        border-radius: 12px
+    
+    // Sub-heading styling in card 
+    h2
+        color: $dark-blue
+        padding: 1rem 1.5rem
+    
+    // Paragraph styling in card 
+    p  
+        color: $grayish-blue
+        padding: 0rem 2rem 1.5rem
